@@ -1,0 +1,209 @@
+/*
+ Theme Name:   Customizr Child
+ Theme URI:    http://presscustomizr.com/customizr-child
+ Description:  Custom Child Theme for Customizer. Prevents any updating with the parent theme from overwritting any changes made.
+ Author:       EkoJR
+ Author URI:   http://ekojr.com
+ Template:     customizr
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         gray, white, light, blue, red, yellow, green, purple, orange, black, one-column, two-columns, three-columns, left-sidebar, right-sidebar, fluid-layout, responsive-layout, buddypress, custom-menu, custom-colors, featured-images, full-width-template, theme-options, threaded-comments, translation-ready, sticky-post, post-formats, rtl-language-support, editor-style
+ Text Domain:  customizr-child
+*/
+
+/**
+* The styleheets of Customizr are located in inc/assets/css. Each skin has its own stylesheet : blue.css, green.css, ...
+* The current stylesheet is loaded after the main skin stylesheet.
+*
+* IMPORTANT : If you write your CSS code below, it will be deleted when you'll update the theme.
+* If you want to make quick style test / changes, consider using the Custom CSS section in appearance > customize > advanced options > Custom CSS, it will persist on update since it is saved in your database.
+* To make important CSS customizations, you'll want to use a child theme and add your css code in the style.css file of it.
+*/
+
+/* 
+General Responsive Rows
+*/
+
+.respon_row {
+	clear: both;
+	overflow: hidden;
+	/* height: 100%; */
+}
+.respon_row:before,
+.respon_row:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+/* 
+General Responsive Columns
+*/
+.respon_col {
+	display: block;
+	/* display: table;*/
+	/* width: 48%; */
+	float: left;
+	margin: 0% 0% 1% 2%;
+}
+.respon_col-center {
+	display: block;
+	/* display: table;*/
+	/* width: 48%; */
+	float: none;
+	margin: 0% 0% 1% 2%;
+}
+.respon_col-right {
+	display: block;
+	/* display: table;*/
+	/* width: 48%; */
+	float: right;
+	margin: 0% 0% 1% 2%;
+}
+
+.respon_col:first-child {
+	margin-left: 0;
+}
+.respon_col-center:first-child {
+	margin-left: 0;
+}
+@media only screen and (max-width: 480px){
+	.respon_col, .respon_col-center, .respon_col-right {
+		margin: 0% 0% 1% 0%;
+	}
+}
+
+.s1of2-7to9 {
+	width: 75%;
+}
+.s2of2-2to9 {
+	width: 23%;
+}
+@media only screen and (max-width: 480px){
+	.s1of2-7to9, .s2of2-2to9 {
+		width: 100%;
+	}
+}
+
+.s1of1-1to3 {
+	width: 32%;
+}
+.s1of2-1to3 {
+	width: 32%;
+}
+.s2of2-1to3 {
+	width: 32%;
+}
+@media only screen and (max-width: 480px){
+	.s1of1-1to3, .s1of2-1to3, .s2of2-1to3 {
+		width: 100%;
+	}
+}
+
+
+
+
+
+.s1of2-2to3 {
+	width: 66%;
+}
+.s2of2-1to3 {
+	width: 32%;
+}
+@media only screen and (max-width: 480px){
+	.s1of2-2to3, .s2of2-1to3 {
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+.connect_row {
+	clear:both;
+	overflow: hidden;
+	/* height: 100%; */
+}
+.connect_row:before,
+.connect_row:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+.connect_col {
+	display: block;
+	/* display: table;*/
+	/* width: 48%; */
+	float: left;
+	margin: 0% 0% 1% 0.9%;
+}
+.connect_col:first-child {
+	margin-left: 0;
+}
+@media only screen and (max-width: 480px){
+	.connect_col {
+		margin: 0% 0% 1% 0%;
+	}
+}
+
+
+.sp1of2 {
+	width: 49.55%;
+}
+.sp2of2 {
+	width: 49.55%;
+}
+@media only screen and (max-width: 480px){
+	.sp1of2, .sp2of2 {
+		width: 100%;
+	}
+}
+
+.sp1of3, .sp2of3, .sp3of3 {
+	width: 32.43%;
+}
+@media only screen and (max-width: 979px){
+	.sp1of3, .sp2of3 {
+		width: 49.55%;
+	} 
+	.sp3of3 {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 480px){
+	.sp1of3, .sp2of3, .sp3of3 {
+		width: 100%;
+	}
+}
+
+
+
+.menu_left {
+    float: left;
+    width: 48%;
+    margin-right: 6px;
+}
+.menu_right {
+    float: right;
+    width: 48%;
+    margin-left: 6px;
+}
+.menu_group:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+@media only screen and (max-width: 480px) {
+    .menu_left, 
+    .menu_right {
+        width: 100%;
+        margin-right: 6px;
+        margin-left: 6px;
+    }
+}
